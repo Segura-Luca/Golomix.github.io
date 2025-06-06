@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golomix E-Commerce</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google fonts
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - Imagenes pre-cargadas
+  -->
+  <link rel="preload" as="image" href="./assets/images/logo.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!---HEADER -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Encontra tu regalo perfecto aca!</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+
+        <!-- LOGO -->
+        <a href="#" class="logo">
+          <img src="./assets/imagesnew/LOGO1.png" width="358" height="26" alt="Golomix">
+        </a>
+
+  
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link has-after">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="navbar-link has-after">Catalogo</a>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link has-after">Nosotros</a>
+            </li>
+
+            <li>
+              <a href="html/g.html"class="navbar-link has-after">Gomitas</a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+<a href="https://www.instagram.com/golomix.mdp/"></a>
+
+
+
+  <!--- MOBILE NAVBAR -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a class="logo">
+          <img src="./assets/imagesnew/LOGO1.png" width="179" height="26" alt="Glowing">
+        </a>
+
+       
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="#home" class="navbar-link" data-nav-link>Inicio</a>
+        </li>
+
+        <li>
+          <a href="#collection" class="navbar-link" data-nav-link>Catalogo</a>
+        </li>
+
+
+        <li>
+          <a href="#blog" class="navbar-link" data-nav-link>Nosotros</a>
+        </li>
+
+        
+        <li>
+          <a href="/html/g.html" class="navbar-link" data-nav-link>Gomitas</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="hero" data-section>
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="hero-card has-bg-image" style="background-image: url('./assets/imagesnew/hero-banner-1.png')">
+
+                <div class="card-content">
+
+                  <h1 class="h1 hero-title">
+                    Box y Picadas <br>
+                    De Gomitas
+                  </h1>
+<div class="eslogan">                 
+                    <p class="hero-text">
+                   Hace un regalo unico,original e inolvidable
+                  </p>
+                </div>
+                  <p class="price"></p>
+
+                
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" id="collection" aria-label="collection" data-section>
+        <div class="container">
+
+          <ul class="collection-list">
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Picadas</h2>
+
+           
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+               
+                <a href="#picadas" class="btn-link">
+
+                <div class="has-bg-image" style="background-image: url('./assets/imagesnew/collection-1.png')"></div>
+              </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Box</h2>
+        
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              
+                <a href="#box" class="btn-link">
+                  <span class="span">MIRA MAS ACA!</span>
+
+                <div class="has-bg-image" style="background-image: url('./assets/imagesnew/collection-2.png')"></div>
+              </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card has-before hover:shine">
+
+                <h2 class="h2 card-title">Adicionales</h2>
+                
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+               
+                <a href="#picadas" class="btn-link">
+                  <span class="span">MIRA MAS ACA!</span>
+
+                <div class="has-bg-image" style="background-image: url('./assets/imagesnew/collection-3.png')"></div>
+              </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="box" aria-label="shop" data-section>
+
+      
+
+          <div class="title-wrapper">
+            <h2 class="h2section-title">Box</h2>
+
+            <div class="picante">            
+          </div>
+ 
+          
+
+           
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <a href="html/box700.html" class="card-title">
+
+                      
+            
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/imagesnew/IMG_20241103_124324_845.webp" width="540" height="720" loading="lazy"
+                    alt="Box 700gr" class="img-cover">
+                  </a>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">$17.700</span>
+                  </div>
+
+                  <h3>
+                    <a href="html/box700.html" class="card-title">Box700
+
+                      
+                    </a>
+                  </h3>
+
+                  <div class="card-rating">
+                    
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">471 reseñas</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+           <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxlove.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/IMG_love.jpg" width="540" height="720" loading="lazy"
+          alt='Box "LOVE"' class="img-cover">
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        <span class="span">$11.300</span>
+      </div>
+
+      <h3>
+        <a href="html/boxlove.html" class="card-title">Box "LOVE"</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 star rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        </div>
+        <p class="rating-text">238 reseñas</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+          <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxvisor.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/IMG_20241205_123313_045~2.jpg" width="540" height="720" loading="lazy"
+          alt="Box 400gr" class="img-cover">
+        <span class="badge" aria-label="20% off">-36%</span>
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        <del class="del">$15.400</del>
+        <span class="span">$13.200</span>
+      </div>
+
+      <h3>
+        <a href="html/boxvisor.html" class="card-title">Box "visor"</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 start rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        </div>
+        <p class="rating-text">29 calificaciones</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+            
+            
+
+           <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxdivisiones.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/IMG_divisiones.jpg" width="540" height="720" loading="lazy"
+          alt="Box 400gr" class="img-cover">
+        <span class="badge" aria-label="20% off">-36%</span>
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        <del class="del">$14.800</del>
+        <span class="span">$11.300</span>
+      </div>
+
+      <h3>
+        <a href="html/boxdivisiones.html" class="card-title">Box "DIVISIONES"</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 star rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        </div>
+        <p class="rating-text">46 calificaciones</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+
+                
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <a href="html/boxdeluxe.html" class="card-title">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/imagesnew/IMG_20241203_101434_591.webp" width="540" height="600" loading="lazy"
+                    alt="Box 400gr" class="img-cover">
+</a>
+                  <span class="badge" aria-label="20% off">-36%</span>
+
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <del class="del">$18.800</del>
+
+                    <span class="span">$16.300</span>
+                  </div>
+
+                  <h3>
+                    <a href="html/boxdeluxe.html" class="card-title">Box "deluxe"</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                  
+                    </div>
+
+                    <p class="rating-text">154 calificaciones</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+  
+           <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxcorazon.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/IMG_corazon.jpg" width="540" height="720" loading="lazy"
+          alt="Box 400gr" class="img-cover">
+        <span class="badge" aria-label="20% off">-36%</span>
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        <del class="del">$13.800</del>
+        <span class="span">$11.300</span>
+      </div>
+
+      <h3>
+        <a href="html/boxcorazon.html" class="card-title">Box "CORAZÓN"</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 star rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        </div>
+        <p class="rating-text">122 calificaciones</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+  <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxpremium.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/premium.png" width="540" height="720" loading="lazy"
+          alt="Box 400gr" class="img-cover">
+      
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        
+        <span class="span">$15900</span>
+      </div>
+
+      <h3>
+        <a href="html/boxpremium.html" class="card-title">Box Premium</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 star rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        </div>
+        <p class="rating-text">14 calificaciones</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+  <li class="scrollbar-item">
+  <div class="shop-card">
+    <a href="html/boxFelizDia.html" class="card-title">
+      <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+        <img src="./assets/imagesnew/felizdia.png" width="540" height="720" loading="lazy"
+          alt="Box 400gr" class="img-cover">
+        
+      </div>
+    </a>
+
+    <div class="card-content">
+      <div class="price">
+        
+        <span class="span">$10700</span>
+      </div>
+
+      <h3>
+        <a href="html/boxFelizDia.html" class="card-title">Box "Feiz Dia"</a>
+      </h3>
+
+      <div class="card-rating">
+        <div class="rating-wrapper" aria-label="5 star rating">
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+          <ion-icon name="star" aria-hidden="true"></ion-icon>
+        
+        </div>
+        <p class="rating-text">12 calificaciones</p>
+      </div>
+    </div>
+  </div>
+</li>
+
+                
+          </div>
+        </div>      
+
+      <section class="section shop" id="picadas" aria-label="picadas" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2section-title">Picadas & Adicionales</h2>
+          </div>
+
+          <ul class="has-scrollbar">
+
+           
+
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <a href="html/ramo.html" class="card-title">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/imagesnew/IMG_Ramo.jpg" width="540" height="720" loading="lazy"
+                    alt="" class="img-cover">
+</a>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">$10.900</span>
+                  </div>
+
+                  <h3>
+                    <a href="html/ramo.html" class="card-title">Ramo</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">70 ratings</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <a href="html/picada.html" class="card-title">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/imagesnew/IMG_picada.jpg" width="540" height="720" loading="lazy"
+                    alt="" class="img-cover">
+</a>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">$12.990</span>
+                  </div>
+
+                  <h3>
+                    <a href="html/picada.html" class="card-title">Picada Corazon</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">64 ratings</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+                <a href="html/vaso.html" class="card-title">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/imagesnew/IMG_vaso.jpg" width="540" height="720" loading="lazy"
+                    alt="" class="img-cover">
+</a>
+                </div>
+
+                <div class="card-content">
+
+                  <div class="price">
+                    <span class="span">$10.400</span>
+                  </div>
+
+                  <h3>
+                    <a href="html/vaso.html" class="card-title">Vaso 400</a>
+                  </h3>
+
+                  <div class="card-rating">
+
+                    <div class="rating-wrapper" aria-label="5 start rating">
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <p class="rating-text">37 ratings</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Porque elegir Golomix?</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+                <img src="./assets/imagesnew/feature-1.png" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Personalizacion y presentacion unica!</h3>
+
+                <p class="card-text">
+                  nuestros productos ofrecen cartas con dedicatoria <br>
+                  y la personalizacion con las gomitas que mas te gusten!
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/imagesnew/feature-2.png" width="204" height="236" loading="lazy"
+                  alt="Completely Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Atencion personal</h3>
+
+                <p class="card-text">
+                  ofrecemos asesoramiento para seleccionar y ofrecer al cliente la opcion que mas le sirva en base a lo que requiera
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/imagesnew/feature-3.png" width="204" height="236" loading="lazy"
+                  alt="Ingredient Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Rapida preparacion</h3>
+
+                <p class="card-text">
+                  Tomamos,preparamos y enviamos el pedido en menos de 24hs
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">Mas Sobre Nosotros!</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="blog-card">
+                <a target="_blank" href="https://www.google.com/maps/place/12+de+Octubre+5363,+B7600FUM+Mar+del+Plata,+Provincia+de+Buenos+Aires/@-38.029249,-57.5665327,17.56z/data=!4m6!3m5!1s0x9584de86026c33c1:0xafd76caf735c86dd!8m2!3d-38.0291358!4d-57.5645441!16s%2Fg%2F11rp37xz68?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" class="btn-link">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img class="maps" src="./assets/imagesnew/Maps.png" width="700" height="450" loading="lazy" alt="Find a Store"
+                    class="img-cover">
+                </figure>
+</a>
+                <h3 class="h3">
+                  <a href="https://www.google.com/maps/place/12+de+Octubre+5363,+B7600FUM+Mar+del+Plata,+Provincia+de+Buenos+Aires/@-38.029249,-57.5665327,17.56z/data=!4m6!3m5!1s0x9584de86026c33c1:0xafd76caf735c86dd!8m2!3d-38.0291358!4d-57.5645441!16s%2Fg%2F11rp37xz68?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" class="card-title">Punto de retiro <br> (NO atendemos en el momento) </a>
+                </h3>
+
+                <a target="_blank" href="https://www.google.com/maps/place/12+de+Octubre+5363,+B7600FUM+Mar+del+Plata,+Provincia+de+Buenos+Aires/@-38.029249,-57.5665327,17.56z/data=!4m6!3m5!1s0x9584de86026c33c1:0xafd76caf735c86dd!8m2!3d-38.0291358!4d-57.5645441!16s%2Fg%2F11rp37xz68?entry=ttu&g_ep=EgoyMDI1MDQxNC4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" class="btn-link">
+                  <span class="span">12 de octubre 5363</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+                <a target="_blank" href="https://www.instagram.com/golomix.mdp/" class="btn-link">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-2.jpg" width="700" height="450" loading="lazy" alt="From Our Blog"
+                    class="img-cover">
+                </figure>
+</a>
+                <h3 class="h3">
+                  <a href="https://www.instagram.com/golomix.mdp/" class="card-title">Asesorar tu pedido!</a>
+                </h3>
+
+                <a target="_blank" href="https://www.instagram.com/golomix.mdp/" class="btn-link">
+                  <span class="span">IG:Golomix.mdp</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="blog-card">
+                <a href="#collection" class="card-title">
+                <figure class="card-banner img-holder has-before hover:shine" style="--width: 700; --height: 450;">
+                  <img src="./assets/images/blog-3.jpg" width="700" height="450" loading="lazy" alt="Our Story"
+                    class="img-cover">
+                </figure>
+</a>
+                <h3 class="h3">
+                  <a href="#collection" class="card-title">Volver al catalogo!</a>
+                </h3>
+
+                <a href="#collection" class="btn-link">
+                  <span class="span">catalogo</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+
