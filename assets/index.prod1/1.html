@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box 700 - Golomix</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Fondo claro */
+        }
+        header {
+            background-color: #de5dbd;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        header a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .product-images {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .carousel img {
+            width: 100%;
+            display: none;
+            border-radius: 10px;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .carousel .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+        .carousel .arrow.left {
+            left: 10px;
+        }
+        .carousel .arrow.right {
+            right: 10px;
+        }
+        .product-info {
+            flex: 2;
+            min-width: 300px;
+            color: #333;
+        }
+        .product-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #de5dbd;
+        }
+        .product-price {
+            font-size: 1.8rem;
+            color: #de5dbd;
+            margin-bottom: 20px;
+        }
+        .product-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .product-description span {
+            font-weight: bold;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #de5dbd;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #b34d9b;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const images = document.querySelectorAll(".carousel img");
+            const prevButton = document.querySelector(".arrow.left");
+            const nextButton = document.querySelector(".arrow.right");
+            let currentIndex = 0;
+
+            function updateCarousel() {
+                images.forEach((img, index) => {
+                    img.classList.toggle("active", index === currentIndex);
+                });
+            }
+
+            prevButton.addEventListener("click", () => {
+                currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                updateCarousel();
+            });
+
+            nextButton.addEventListener("click", () => {
+                currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                updateCarousel();
+            });
+
+            updateCarousel();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html">Volver al inicio</a>
+    </header>
+    <div class="container">
+        <div class="product">
+            <div class="product-images">
+                <div class="carousel">
+                    <img src="../imagesnew/IMG_20241103_124324_845.webp" alt="Imagen 1 de la Box 700 de Golomix" class="active">
+                    <img src="../imagesnew/IMG_20240707_162608_712.webp" alt="Imagen 2 de la Box 700 de Golomix">
+                    <img src="box700-3.jpg" alt="Imagen 3 de la Box 700 de Golomix">
+                    <button class="arrow left">&#9664;</button>
+                    <button class="arrow right">&#9654;</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Box 700 - Golomix</h1>
+                <p class="product-price">$Precio</p>
+                <p class="product-description">La <span>Box 700</span> es perfecta para regalar a tu pareja o sorprender a alguien especial. Contiene una selección de más de 700 gramos de gomitas personalizables de las mejores marcas, presentada en una caja decorativa lista para regalar. Además, puedes incluir una carta personalizada para hacer el obsequio aún más especial.</p>
+                <a href="contacto.html" class="cta-button">¡Haz tu pedido ahora!</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
